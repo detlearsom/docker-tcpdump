@@ -23,3 +23,8 @@ To analyze the stream live remotely from wireshark:
 
     $ ssh root@remote-host "docker run --rm --net=host corfr/tcpdump -i any -w - not port 22 2>/dev/null" |wireshark -k -i -
 
+
+## Acknowledgements
+
+This container is adapted from <https://github.com/CoRfr/tcpdump-docker>.
+
